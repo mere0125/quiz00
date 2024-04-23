@@ -1,0 +1,123 @@
+:root {
+    --orange: white;
+    --orange-dark: black;
+    --dark-dark-blue: white;
+  }
+  
+  body {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    background-image: 
+   url("assets/1.jpeg"),
+      url("assets/2.jpeg"),
+      url("assets/3.jpeg"),
+      url("assets/4.jpeg"),
+      url("assets/5.jpeg"),
+      url("assets/6.jpeg"),
+      url("assets/7.jpeg"),
+      url("assets/8.jpeg"),
+      url("assets/9.jpeg"),
+      url("assets/10.jpeg");
+    background-attachment: fixed;
+    background-size: 10%;
+    animation: alternateBackgrounds 4s infinite; 
+  }
+  
+   @keyframes alternateBackgrounds {
+    0%, 15% {
+      background-image: url('assets/1.jpeg');
+    }
+    15.1%, 30% {
+      background-image: url('assets/2.jpeg');
+    }
+    30.1%, 45% {
+      background-image: url('assets/3.jpeg');
+    }
+    45.1%, 60% {
+      background-image: url('assets/4.jpeg');
+    }
+    60.1%, 75% {
+      background-image: url('assets/7.jpeg');
+    }
+    75.1%, 90% {
+      background-image: url('assets/8.jpeg');
+    }
+    90.1%, 100% {
+      background-image: url('assets/9.jpeg');
+    }
+  
+  
+s
+  }
+
+  
+  
+  button {
+    position: absolute;
+    top: 80%;
+    left: 47%;/
+    background-color: blue; 
+    color: yellow;
+    border: 1px solid #000000; 
+    padding: 10px 20px;
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s, color 0.3s; 
+    transform: scale(3); 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    font-style: italic;
+}
+
+
+
+button:hover {
+    background-color: deeppink; 
+            color:yellow;
+
+}
+
+h1 {
+    text-align: center; 
+    color: yellow;
+    background-color:deeppink;
+    border: 2px solid #000000; 
+    border-radius: 50%; 
+    padding: 20px;
+    width: px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 72px;
+    font-style: italic;
+}
+
+h2 {
+  position: absolute;
+  top: 180px;
+  left:44.25%;
+    text-align: center;
+    color: rgb(255, 164, 18);
+    background-color:greenyellow;
+    border: 10px dotted #000000;
+    border-radius: 0; 
+    padding: 20px;
+    width: px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 48px;
+    font-style: italic;
+}
+
+img{
+    max-width: 19%; 
+    display: block; 
+   position: absolute;
+   top:37%;
+   left:40%;
+}

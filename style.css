@@ -1,0 +1,113 @@
+:root {
+    --orange: white;
+    --orange-dark: black;
+    --dark-dark-blue: white;
+  }
+  
+  body {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    background-image: 
+      url("assets/1.jpeg"),
+      url("assets/2.jpeg"),
+      url("assets/3.jpeg"),
+      url("assets/4.jpeg"),
+      url("assets/5.jpeg"),
+      url("assets/6.jpeg"),
+      url("assets/7.jpeg"),
+      url("assets/8.jpeg"),
+      url("assets/9.jpeg"),
+      url("assets/10.jpeg");
+    background-attachment: fixed;
+    background-size: 10%;
+    animation: alternateBackgrounds 4s infinite; 
+  }
+  
+  @keyframes alternateBackgrounds {
+    0%, 15% {
+      background-image: url('assets/1.jpeg');
+    }
+    15.1%, 30% {
+      background-image: url('assets/2.jpeg');
+    }
+    30.1%, 45% {
+      background-image: url('assets/3.jpeg');
+    }
+    45.1%, 60% {
+      background-image: url('assets/4.jpeg');
+    }
+    60.1%, 75% {
+      background-image: url('assets/7.jpeg');
+    }
+    75.1%, 90% {
+      background-image: url('assets/8.jpeg');
+    }
+    90.1%, 100% {
+      background-image: url('assets/9.jpeg');
+    }
+  
+
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    left: 47.5%;
+    transform: translate(-50%, -50%);
+    /* 定义按钮的样式 */
+    background-color: blue; /* 按钮背景色 */
+    color: yellow; /* 文本颜色 */
+    border: 1px solid #000000; /* 边框样式 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 50%; /* 边框圆角 */
+    text-decoration: none; /* 去除默认链接样式 */
+    display: inline-block; /* 让按钮表现为块级元素 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+    transform: scale(4); /* 放大按钮 5 倍 */
+    font-family: Arial, sans-serif; /* 字体 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+    font-style: italic;
+}
+
+
+
+/* 悬停时按钮的样式 */
+button:hover {
+    background-color: deeppink; 
+            color:yellow; 
+
+}
+
+h1 {
+    text-align: center; 
+    color: yellow;
+    background-color:deeppink;
+    border: 5px solid #000000; 
+    border-radius: 50%; 
+    padding: 20px; 
+    width: px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 72px;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center; 
+    color: yellow;
+    background-color:deeppink;
+    border: 2px solid #000000; 
+    border-radius: 0%; 
+    padding: 20px; 
+    width: px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 48px;
+    font-style: italic;
+}
